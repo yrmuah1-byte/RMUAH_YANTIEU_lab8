@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+:root {
+    --bg: #f4f4f4;
+    --text: #222;
+    --heading: #005035;
+    --card: #fff;
+    --muted: #777;
+    --border: #ddd;
+    --comment-bg: #f7f7f7;
+}
+
+:root[data-theme='dark'] {
+    --bg: #181818;
+    --text: #eee;
+    --card: #242424;
+    --heading: #86c5a8;
+    --muted: #aaa;
+    --border: #444;
+    --comment-bg: #1c1c1c;
+}
+
+input,
+textarea {
+    background-color: var(--card);
+    color: var(--text);
+}
+
+.blogpost a {
+    color: var(--heading);
+}
+
+.status {
+    text-align: center;
+    color: var(--muted);
+    padding: 2rem;
+}
